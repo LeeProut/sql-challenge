@@ -50,7 +50,14 @@ FROM "Department_Employee" AS de
 		JOIN "Employees" AS e
 		ON de.emp_no = e.emp_no;
 
-
+--Data Analysis #5 
+--Finding Hercules B
+--list first name, last name, sex, for employees with first name "Hercules", last name beginning with a "B"
+--all data within Employees table 
+SELECT first_name, last_name, sex
+FROM "Employees"
+WHERE first_name = 'Hercules'
+AND last_name LIKE 'B%';
 
 
 
