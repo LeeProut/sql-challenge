@@ -6,13 +6,13 @@ FROM "Employees";
 --Perform an Inner Join on Employees and Salaries Tables
 --matching key is emp_no
 --run to confirm join
---found this website helpful for correcting syntax: http://davebland.com/joins-part-4
 SELECT * 
 FROM "Employees"
 JOIN "Salaries"
 ON "Employees".emp_no = "Salaries".emp_no;
 
 --select specific columns required from the joined data
+--found this website helpful for correcting syntax: http://davebland.com/joins-part-4
 SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
 FROM "Employees" AS e
 JOIN "Salaries" AS s
@@ -30,6 +30,16 @@ ORDER BY hire_date
 
 --Data Analysis #3
 --manager of each dept
+--list department number, department name, manaager's emp number, last name, first name
+--the Department_Manager table connects the Department and Employees tables
+SELECT dm.dept_no, d.dept_name, dm.emp_no, e.last_name, e.first_name
+FROM "Department_Manager" AS dm
+	JOIN "Departments" AS d
+	ON dm.dept_no = d.dept_no
+		JOIN "Employees" AS e
+		ON dm.emp_no = e.emp_no;
+
+
 
 
 
