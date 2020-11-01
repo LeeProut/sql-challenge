@@ -83,6 +83,11 @@ FROM "Employees" AS e
 			WHERE d.dept_name = 'Sales' OR
 			d.dept_name = 'Development';
 		
-
+--Data Analysis #8
+--Find frequency count of employee last names and list in descending order 
+SELECT last_name, COUNT(last_name) AS "Total_occurrences"
+FROM "Employees"
+GROUP BY  last_name
+ORDER BY "Total_occurrences" DESC;
 
 
