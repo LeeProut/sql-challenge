@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+sql_cred.py
+sql_cred.py.ipynb
 config.py
 config.py.ipynb
 __pycache__/
