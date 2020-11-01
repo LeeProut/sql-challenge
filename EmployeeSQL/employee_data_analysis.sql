@@ -59,6 +59,18 @@ FROM "Employees"
 WHERE first_name = 'Hercules'
 AND last_name LIKE 'B%';
 
+--Data Analysis #6
+--All sales employees
+--list emp number, last name, first name, dept name for Sales dept only
+--Department_Employee table connects the Departments and Employees tables
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM "Employees" AS e
+	JOIN "Department_Employee" AS de
+	ON e.emp_no = de.emp_no
+		JOIN "Departments" AS d
+		ON de.dept_no = d.dept_no
+			WHERE d.dept_name = 'Sales'	
+		
 
 
 
