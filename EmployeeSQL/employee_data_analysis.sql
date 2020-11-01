@@ -39,6 +39,18 @@ FROM "Department_Manager" AS dm
 		JOIN "Employees" AS e
 		ON dm.emp_no = e.emp_no;
 
+--Data Analysis #4 
+--department for each employee
+--list emp number, last name, first name, department name
+--Department_Employee table connects the Departments and Employees tables
+SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
+FROM "Department_Employee" AS de
+	JOIN "Departments" AS d
+	ON de.dept_no = d.dept_no
+		JOIN "Employees" AS e
+		ON de.emp_no = e.emp_no;
+
+
 
 
 
