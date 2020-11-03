@@ -90,4 +90,8 @@ FROM "Employees"
 GROUP BY  last_name
 ORDER BY "Total_occurrences" DESC;
 
-
+--Epilogue
+--Search employee number 499942
+SELECT *
+FROM "Employees" 
+WHERE emp_no = '499942'
