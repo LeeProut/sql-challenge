@@ -1,10 +1,8 @@
-# Employee Database: A Mystery in Two Parts
+### Employee Database: A Mystery in Two Parts
 
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+A data engineering project for Pewlett Hackard, researching data on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
 
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
-
-# I. Data Engineering: 
+### I. Data Engineering: 
 
 1. Designed tables to hold data from six CSVs
 
@@ -12,7 +10,7 @@ In this assignment, you will design the tables to hold data in the CSVs, import 
 
 ![ERD](EmployeeSQL/Images/Employee_ERD.png)
 
-# II. Data Analysis:
+### II. Data Analysis:
 
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
@@ -30,7 +28,7 @@ In this assignment, you will design the tables to hold data in the CSVs, import 
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-# Working in Pandas:
+### Working in Pandas:
 
 1. Created a histogram to visualize the most common salary ranges for employees.
 
@@ -38,4 +36,6 @@ In this assignment, you will design the tables to hold data in the CSVs, import 
 
 2. Created a bar chart of average salary by title.
 
-![Average Salary Bar Chart](EmployeeSQL/Images/Salaries.png)
+![Average Salary Bar Chart](EmployeeSQL/Images/AverageSalaries.png)
+
+#### Searched for Employee # 499942: April Foolsday! 
